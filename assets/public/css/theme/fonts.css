@@ -1,0 +1,14 @@
+/* inter-regular - latin */
+@font-face {
+	font-family: "inter";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts-files/inter/static/Inter-Regular.ttf") format("ttf");
+}
+/* poppins - latin */
+@font-face {
+	font-family: "poppins";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts-files/poppins/Poppins-Regular.ttf") format("ttf"),
+}

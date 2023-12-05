@@ -1,0 +1,1 @@
+fetch("/application/configs/application.json").then((o=>o.json())).then((o=>{const a=o.caminhos.arquivo1,c=o.caminhos.arquivo2,n=o.outras_configuracoes.chave1,i=o.outras_configuracoes.chave2;console.log("Caminho do Arquivo 1:",a),console.log("Caminho do Arquivo 2:",c),console.log("Chave 1:",n),console.log("Chave 2:",i)})).catch((o=>console.error("Erro ao buscar o arquivo:",o)));

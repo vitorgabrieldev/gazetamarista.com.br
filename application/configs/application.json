@@ -1,0 +1,11 @@
+{
+    "css": {
+      "fonts": "/caminho/do/arquivo1.txt",
+      "app": "/caminho/do/arquivo2.txt"
+    },
+    "js": {
+      "app": "/caminho/do/arquivo1.txt",
+      "antd": "/caminho/do/arquivo1.txt"
+    }
+  }
+  
