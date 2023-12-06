@@ -1,0 +1,10 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../image/sys/bg-error.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
