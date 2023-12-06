@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production', // ou 'production' para otimizar para produção
-  entry: '/assets/public/js/app.js',  // Seu ponto de entrada principal
+  mode: 'production', // 'production' para otimizar para produção
+  entry: '/assets/public/js/app.js',  //  ponto de entrada principal
   output: {
     filename: 'GLOBAL.js',
-    path: path.resolve(__dirname, 'common/dist'),
+    path: path.resolve(__dirname, 'dist'),
   },
 };
