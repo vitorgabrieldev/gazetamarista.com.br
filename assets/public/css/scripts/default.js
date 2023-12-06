@@ -1,0 +1,1 @@
+/* Scripts da página default.html */
