@@ -20,8 +20,8 @@
   --spacing-large: 24px;
   --border-radius: 4px;
   --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --font-family-primary: 'inter';
-  --font-family-secondary: 'poppins', sans-serif;
+  --font-family-primary: 'inter', arial;
+  --font-family-secondary: 'poppins', arial;
   --font-family-fallback: sans-serif;
   --z-index-dropdown: 1000;
   --z-index-modal: 2000;

@@ -5,6 +5,9 @@
     "layout": {
       "filename"  : "../assets/public/css/layout/"
     },
+    "scripts": {
+      "filename"  : "../assets/public/css/scripts/"
+    },
     "js": {
       "app": "../assets/public/js/app.js"
     },
