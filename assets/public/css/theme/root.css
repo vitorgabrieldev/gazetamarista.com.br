@@ -1,0 +1,29 @@
+/* /application/assets/public/css/theme/root.css */
+
+@import url(fonts.css);
+
+:root {
+  --primary-color: #007BFF;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --link-color: #007BFF;
+  --link-hover-color: #0056b3;
+  --error-color: #dc3545;
+  --success-color: #28a745;
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --line-height: 1.5;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --border-radius: 4px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --font-family-primary: 'inter';
+  --font-family-secondary: 'poppins', sans-serif;
+  --font-family-fallback: sans-serif;
+  --z-index-dropdown: 1000;
+  --z-index-modal: 2000;
+  --z-index-overlay: 3000;
+}

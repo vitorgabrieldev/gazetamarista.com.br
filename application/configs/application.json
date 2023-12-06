@@ -1,0 +1,15 @@
+{
+    "css": {
+      "app"  : "../assets/public/css/app.css"
+    },
+    "layout": {
+      "filename"  : "../assets/public/css/layout/"
+    },
+    "js": {
+      "app": "../assets/public/js/app.js"
+    },
+    "favicon": {
+      "file": "../assets/public/image/sys/favicon.ico"
+    }
+  }
+  
