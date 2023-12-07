@@ -1,1 +1,0 @@
-/* Scripts da página error.html */
