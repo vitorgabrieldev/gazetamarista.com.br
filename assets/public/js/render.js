@@ -1,46 +1,36 @@
-
-var pathSettings = '/application/configs/application.json';
-
-const request = (path) => {
-    fetch(path)
-    .then(response => response.json())
-    .then(data => renderFiles(data))
-    .catch(error => console.error('Erro ao buscar o arquivo:', error));
-};
-
-request(pathSettings);
-
-const renderFiles = (data) => {
+const renderFiles = () => {
 
     // Files Css
     const linkCSS = document.createElement('link');
     linkCSS.rel = 'stylesheet';
     linkCSS.type = 'text/css';
-    linkCSS.href = data.css.app;
+    linkCSS.href = '../assets/public/css/app.css';
     document.head.appendChild(linkCSS);
 
     // Files Js
     const scriptJS = document.createElement('script');
-    scriptJS.src = data.js.app;
-    document.body.appendChild(scriptJS);
+    scriptJS.src = '../assets/public/js/app.js';
+    scriptJS.defer = true;
+    document.head.appendChild(scriptJS);
 
     // Logo Favicon
     const faviconLink = document.createElement('link');
     faviconLink.rel = 'icon';
     faviconLink.type = 'image/x-icon';
-    faviconLink.href = data.favicon.file;
+    faviconLink.href = '../assets/public/image/sys/favicon.ico';
     document.head.appendChild(faviconLink);
   
     // Files Css
     const layoutCSS = document.createElement('link');
     layoutCSS.rel = 'stylesheet';
     layoutCSS.type = 'text/css';
-    layoutCSS.href = `${data.layout.filename}${document.querySelector('head').getAttribute('data-html-filename')}.css`;
+    layoutCSS.href = `../assets/public/css/layout/${document.querySelector('head').getAttribute('data-html-filename')}.css`;
     document.head.appendChild(layoutCSS);
 
     const scriptFilenameJS = document.createElement('script');
-    scriptFilenameJS.src = `${data.scripts.filename}${document.querySelector('head').getAttribute('data-html-filename')}.js`;
-    document.body.appendChild(scriptFilenameJS);
+    scriptFilenameJS.src = `../assets/public/css/scripts/${document.querySelector('head').getAttribute('data-html-filename')}.js`;
+    scriptFilenameJS.defer = true;
+    document.head.appendChild(scriptFilenameJS);
 
     // Bootstrap
     const BootstrapCSS = document.createElement('link');
@@ -54,9 +44,11 @@ const renderFiles = (data) => {
     scriptJS.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js';
     scriptJS.integrity = 'sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL';
     scriptJS.crossOrigin = 'anonymous';
-    document.body.appendChild(scriptJS);
+    document.head.appendChild(scriptJS);
 
     const jquery = document.createElement('script');
     jquery.src = '../node_modules/jquery/dist/jquery.min.js';
-    document.body.appendChild(jquery);
+    document.head.appendChild(jquery);
 };
+
+renderFiles();
