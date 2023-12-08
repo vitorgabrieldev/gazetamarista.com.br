@@ -1,10 +1,16 @@
-<!-- Gerenciar a exibição e moderação de comentários nas notícias.
-Lógica para adicionar, editar e excluir comentários. -->
-
 <?php
 
-    include_once '../../configs/index.php';
+include_once '../../configs/index.php';
 
-       
+class ComentariosController {
+ 
+    public function listarComentarios() { }
+
+    public function aprovarComentario($id) { }
+
+    public function rejeitarComentario($id) { }
+
+    public function excluirComentario($id) { }
+}
 
 ?>

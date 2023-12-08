@@ -1,14 +1,20 @@
 /* Scripts da página default.html */
 
+const PathServer = './modules/models/'; 
+
 $(document).ready(function() {
     $("#btnConectar").click(function() {
+
+        let request = "Noticias";
         $.ajax({
-            url: "./modules/controllers/defaultcontroller.php",
+            type: 'POST',
+            url: `${PathServer}${request}.php`,
+            data: { acao: 'exibirNoticias', id : 1 },
             success: function(response) {
-                console.log(response)
+                console.log(response);
             },
             error: function(error) {
-                console.error("Erro na requisição AJAX: ", error);
+                console.log('Erro na solicitação AJAX: ' + error);
             }
         });
     });

@@ -1,11 +1,18 @@
-<!-- Gerenciar a exibição de notícias.
-Lógica para exibir notícias em diferentes categorias.
-Adicionar, editar e excluir notícias. -->
-
 <?php
 
-    include_once '../../configs/index.php';
+include_once '../../configs/index.php';
 
-       
+class NoticiasController {
+    
+    public function exibirNoticias() { }
+
+    public function exibirNoticia($id) { }
+
+    public function adicionarNoticia() { }
+
+    public function editarNoticia($id) { }
+
+    public function excluirNoticia($id) { }
+}
 
 ?>
